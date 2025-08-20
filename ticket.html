@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #faf8f6;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #e59500;
+      margin-bottom: 10px;
+    }
+    .ticket-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .verified {
+      display: inline-block;
+      background: #f9f2e7;
+      color: #a76b00;
+      font-weight: bold;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+    .ticket-card h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #111;
+    }
+    .details {
+      margin: 12px 0;
+      font-size: 15px;
+    }
+    .qr {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .qr img {
+      width: 140px;
+      height: 140px;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #a76b00;
+      text-decoration: none;
+    }
+    .actions {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: none;
+      font-size: 14px;
+    }
+    .btn-share {
+      background: #f5f5f5;
+      color: #333;
+    }
+    .btn-directions {
+      background: #a76b00;
+      color: white;
+    }
+    .next-section {
+      margin-top: 40px;
+    }
+    .next-cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .next-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 220px;
+    }
+    .next-card h3 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .next-card p {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="font-size: 40px; color: green;">✔</div>
+    <p><strong>Hi, Elijah Masete</strong></p>
+    <h1>You're All Set!</h1>
+    <p>Your ticket is valid. Get ready for an amazing experience!</p>
+
+    <div class="ticket-card">
+      <div class="verified">VERIFIED TICKET</div>
+      <h2>Kenya Vs Madagascar</h2>
+      <div class="details">📅 Friday, 22 Aug 2025 — 5:00 PM</div>
+      <div class="details">📍 Venue: Moi International Sports Centre</div>
+      
+      <div class="qr">
+        <img src="kenya_vs_madagascar_ticket_qr.png" alt="QR Code Ticket">
+      </div>
+
+      <div class="footer">
+        Need help? <a href="#">Contact Support</a>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-share">🔗 Share</button>
+        <button class="btn btn-directions" onclick="window.open('https://maps.google.com/?q=Moi+International+Sports+Centre')">📍 Get Directions</button>
+      </div>
+    </div>
+
+    <div class="next-section">
+      <h2>What's next?</h2>
+      <div class="next-cards">
+        <div class="next-card">
+          <div style="font-size: 25px;">📅</div>
+          <h3>Add to Calendar</h3>
+          <p>Don't forget the date! Add this event to your calendar.</p>
+        </div>
+        <div class="next-card">
+          <div style="font-size: 25px;">📍</div>
+          <h3>Plan Your Trip</h3>
+          <p>Check out parking, public transport, and nearby hotels.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
